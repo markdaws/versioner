@@ -13,13 +13,13 @@ time you do a new release of your website to your servers.
 
 For example, versioner will generate URLs like:
 
-http://localhost/assets/style.fa92255da9e98dd0b09188fb982213ec.css
-http://localhost/assets/main.b1c7fc379fb437c54ef5981337e623b7.js
+    http://localhost/assets/style.fa92255da9e98dd0b09188fb982213ec.css
+    http://localhost/assets/main.b1c7fc379fb437c54ef5981337e623b7.js
 
 Instead of:
 
-http://localhost/assets/style-1.2.1.css
-http://localhost/assets/main-1.2.1.js
+    http://localhost/assets/style-1.2.1.css
+    http://localhost/assets/main-1.2.1.js
 
 If the contents of main.js changes but style.css doesn't the versioner approach
 will only cause clients to redownload main.js, whereas the simple version number will
