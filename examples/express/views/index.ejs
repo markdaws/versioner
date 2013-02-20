@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="<%= versioner.cssUrl('style.css') %>"/>
+  </head>
+  <body>
+    <h1>TODO: Example name <%= title %></h1>
+
+    <p>This img tag had the source set in the .ejs file</p>
+    <img src="<%= versioner.imageUrl('img_small.jpg') %>" />
+
+    <p>This div is using a background image in css</p>
+    <div id="bgImgA"></div>
+
+    <p>This div is using a background image with a datauri in css</p>
+    <div id="bgImgB"></div>
+
+    <p>The script tag URL was added in EJS</p>
+    <script src="<%= versioner.jsUrl('dir1/main.js') %>" ></script>
+  </body>
+</html>
