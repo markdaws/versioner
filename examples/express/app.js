@@ -26,32 +26,14 @@ var versioner = new Versioner({
     types: {
         image: {
             //NOTE: Paths must be absolute
-            //TODO: Change these to be root
             root: __dirname + '/public/images',
-
-            // Can also specify a list of explicit files, NOTE: These
-            // have to be explicit paths, same for js and style
-            //files: [
-                //TODO: remove
-                //{ root: '/Users/mark/stuff', path: 'bar/baz.jpg' },
-                //{ buffer: null, path: 'clipboard.js' }
-            //]
-            //files: ['/foo/bar.jpg', { path: '/foo/baz.jpg', data: null }]
         },
         javascript: {
             root: __dirname + '/public/javascripts',
-            //files: [
-                // clipboard.js,
-                // widgets.js
-            //]
         },
         style: {
             // NOTE: paths must be absolute
             root: __dirname + '/public/stylesheets',
-
-            // Can give an explicit list of files
-            // TODO:
-            //files: [],
 
             // Indicates the files are less files, if not present
             // the files are assumed to be css
@@ -107,11 +89,4 @@ versioner.build(function(error) {
     http.createServer(app).listen(port, function(){
         console.log("Express server listening on port " + port);
     });
-
-    // TODO: Put this in another example
-    /*
-    versioner.save(__dirname, function(error) {
-        console.log('WRITTEN VERSION FILES: ' + JSON.stringify(error));
-    });
-    */
 });
