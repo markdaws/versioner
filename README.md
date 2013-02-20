@@ -25,6 +25,9 @@ If the contents of main.js changes but style.css doesn't the versioner approach
 will only cause clients to redownload main.js, whereas the simple version number will
 cause all of the files to be downloaded by the client.
 
+## Installation
+`npm install versioner`
+
 ## Creating a versioner instance
 In order to create versioned assets you need to provide the location on disk where
 the assets live, plus provide a URL where the versioned assets will be referenced
@@ -419,9 +422,6 @@ jsUrl(path)
  */
 cssUrl(path)
 ```
-
-## Installation
-`npm install versioner`
 
 ## Development
 ```shell
