@@ -112,7 +112,7 @@ If you specify a root path, then the path you pass into the methods above is rel
 to the root path. For example, if you specify the root of images to be:
 /Users/mark/projectA/images
 
-The to retrieve the file that lives at: /USers/mark/projectA/images/dir1/foo.jpg you
+Then to retrieve the file that lives at: /Users/mark/projectA/images/dir1/foo.jpg you
 would call:
 
 ```javascript
@@ -121,7 +121,7 @@ versioner.imageUrl('dir1/foo.jpg')
 
 The value returned will be the versioned image name appended to the urlRoot value, so if
 urlRoot is: http://localhost/static then imageUrl('dir1/foo.jpg') will return
-http://localhost/static/foo.<UNIQUE_HASH>.jpg.
+http://localhost/static/foo.&lt;UNIQUE_HASH&gt;.jpg.
 
 NOTE: the path has been flattened to only use the file name, not including the dir1
 reference.
@@ -211,7 +211,7 @@ signature:
 ```javascript
 function(styleString, callback);
 
-\\callback(error, compiledCss);
+//callback(error, compiledCss);
 ```
 
 Where styleString will be the contents of the style file and the callback should be passed the compiled
