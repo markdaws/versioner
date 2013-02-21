@@ -1,7 +1,6 @@
 var BufferReadStream = require('./buffer-read-stream'),
     Mime = require('mime'),
     Path = require('path'),
-    Send = require('send'),
     Url = require('url');
 
 /**
